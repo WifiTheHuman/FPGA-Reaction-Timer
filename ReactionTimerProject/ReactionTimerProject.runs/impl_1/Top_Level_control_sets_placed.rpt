@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu Mar 19 13:25:08 2020
-| Host         : CAE-28 running 64-bit major release  (build 9200)
+| Date         : Thu Mar 19 13:51:48 2020
+| Host         : CAE-29 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_Level_control_sets_placed.rpt
 | Design       : Top_Level
 | Device       : xc7a100t
@@ -75,17 +75,17 @@ Table of Contents
 +--------------------------+---------------+------------------------------------+------------------+----------------+
 |  bit_counter1/tmpD_reg_0 |               |                                    |                1 |              1 |
 |  bit_counter0/CLK        |               |                                    |                1 |              1 |
-|  bit_counter2/tmpD_reg_0 |               |                                    |                1 |              1 |
-|  bit_counter3/tmpD_reg_0 |               |                                    |                1 |              1 |
-|  bit_counter5/tmpD_reg_0 |               |                                    |                1 |              1 |
 |  bit_counter4/tmpD_reg_0 |               |                                    |                1 |              1 |
+|  bit_counter3/tmpD_reg_0 |               |                                    |                1 |              1 |
+|  bit_counter2/tmpD_reg_0 |               |                                    |                1 |              1 |
+|  bit_counter5/tmpD_reg_0 |               |                                    |                1 |              1 |
 |  divider/clk             |               |                                    |                1 |              1 |
 |  bit_counter1/tmpD_reg_0 |               | SW_IBUF[3]                         |                1 |              4 |
 |  bit_counter0/CLK        |               | SW_IBUF[3]                         |                1 |              4 |
-|  bit_counter2/tmpD_reg_0 |               | SW_IBUF[3]                         |                1 |              4 |
-|  bit_counter3/tmpD_reg_0 |               | SW_IBUF[3]                         |                1 |              4 |
-|  bit_counter5/tmpD_reg_0 |               | SW_IBUF[3]                         |                1 |              4 |
 |  bit_counter4/tmpD_reg_0 |               | SW_IBUF[3]                         |                1 |              4 |
+|  bit_counter3/tmpD_reg_0 |               | SW_IBUF[3]                         |                1 |              4 |
+|  bit_counter2/tmpD_reg_0 |               | SW_IBUF[3]                         |                1 |              4 |
+|  bit_counter5/tmpD_reg_0 |               | SW_IBUF[3]                         |                1 |              4 |
 |  bit_counter6/tmpD_reg_0 |               | SW_IBUF[3]                         |                1 |              4 |
 |  divider/clk             |               | SW_IBUF[3]                         |                1 |              4 |
 |  CLK100MHZ_IBUF_BUFG     |               |                                    |                2 |              4 |

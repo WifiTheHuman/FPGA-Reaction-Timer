@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/373_project/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.xpr">
+<Project Version="7" Minor="44" Path="C:/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3c9b536dfb15404dbddd6e7bf2a6a9c0"/>

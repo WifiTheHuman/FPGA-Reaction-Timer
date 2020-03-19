@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu Mar 19 13:25:37 2020
-| Host         : CAE-28 running 64-bit major release  (build 9200)
+| Date         : Thu Mar 19 13:52:19 2020
+| Host         : CAE-29 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file Top_Level_timing_summary_routed.rpt -pb Top_Level_timing_summary_routed.pb -rpx Top_Level_timing_summary_routed.rpx -warn_on_violation
 | Design       : Top_Level
 | Device       : 7a100t-csg324

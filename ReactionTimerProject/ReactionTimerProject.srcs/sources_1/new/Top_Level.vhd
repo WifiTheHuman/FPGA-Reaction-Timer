@@ -33,7 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Top_Level is
     Port ( SW : in STD_LOGIC_VECTOR (3 downto 0);
-           CA, CB, CC, CD, CE, CF, CG : out STD_LOGIC; 
+           CA, CB, CC, CD, CE, CF, CG, DP: out STD_LOGIC; 
            AN : out std_logic_vector(7 downto 0);
            LED : out std_logic_vector(0 downto 0); 
            CLK100MHZ : in std_logic);
@@ -42,7 +42,7 @@ end Top_Level;
 architecture Behavioral of Top_Level is
 component BCD_to_7SEG is
 		   Port ( bcd_in: in std_logic_vector (3 downto 0);	-- Input BCD vector
-    			leds_out: out	std_logic_vector (1 to 7));	-- Output 7-Seg vector                 
+    			leds_out: out	std_logic_vector (1 to 8));	-- Output 7-Seg vector                 
 end component;
 
 signal wire_1 : std_logic;
@@ -82,7 +82,8 @@ begin
                                   leds_out(4) => CD,
                                   leds_out(5) => CE,
                                   leds_out(6) => CF,
-                                  leds_out(7) => CG);
+                                  leds_out(7) => CG,
+                                  leds_out(8) => DP);
    --divider: clock_divider_1hz port map(in_clock => CLK100MHZ,
 	   --                                out_clock => wire_1);
 	--                                   

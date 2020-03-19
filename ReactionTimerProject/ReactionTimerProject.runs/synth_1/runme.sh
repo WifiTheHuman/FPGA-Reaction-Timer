@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/373_project/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.runs/synth_1'
+HD_PWD='C:/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
