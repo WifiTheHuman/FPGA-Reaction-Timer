@@ -18,18 +18,18 @@ use ieee.std_logic_1164.all;
 -- The entity defines what the module looks like (what inputs and outputs it
 -- has) but says nothing about how it is implemented.
 -- If you are used to C programming, this is equivalent to a header file.
-entity clock_divider is
+entity clock_divider_1hz is
 	-- A generic block can be use for parameters which are configurable
 	-- per-instance. In other words, you can use this module multiple times in
 	-- the same project with different input and output frequencies.
 	generic(
 		-- The frequency of the input clock in Hertz. The default value of
 		-- 50MHz is the speed of the main clock on the Spartan 3 board.
-		INPUT_FREQUENCY  : integer := 50000000;
+		INPUT_FREQUENCY  : integer := 100000000;
 
 		-- The desired output frequency in Hertz.
 		-- Note that the last entry in the generic block does not have trailing semicolon.
-		OUTPUT_FREQUENCY : integer :=     1000
+		OUTPUT_FREQUENCY : integer :=     1
 	);
 
 	-- The port defines the input and output signals.
@@ -45,13 +45,13 @@ entity clock_divider is
 		-- Note that the last entry in the port block does not have a trailing semicolon.
 		out_clock : out std_logic := '0'
 	);
-end clock_divider;
+end clock_divider_1hz;
 
 
 -- The architecture defines the behaviour of the entity we declared above.
 -- In our C analogy, this would be the C file which implements the functions
 -- in the header file.
-architecture behavioral of clock_divider is
+architecture behavioral of clock_divider_1hz is
 
 	-- We can define constants and signals at the top of the architecture,
 	-- before the 'begin' statement.

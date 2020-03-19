@@ -8,7 +8,8 @@ library IEEE;
         	-- external (to the FPGA) input and output connections
             entity counter is 
              port(Clock, CLR : in  std_logic;
-                    Q : out std_logic_vector(3 downto 0));
+                    Q : out std_logic_vector(3 downto 0);
+                    tmpD : out std_logic);
              end counter;
         
              architecture behav of counter is  
@@ -16,6 +17,7 @@ library IEEE;
               signal tmp: std_logic_vector(3 downto 0); -- internal to FPGA
               											-- note, "in" or "out"  
         												-- are invalid
+        	
               -- you can also define components here, and only here. 
              
               begin
@@ -29,10 +31,14 @@ library IEEE;
                           tmp <= "0000";  
         
                    elsif (Clock'event and Clock='1') then 
-        
+                          tmpD <= '0';      -- clears the D output.
                           tmp <= tmp + 1;  -- Counters uses flip-flops to
         									-- "remember" the last count,
         									-- which can then be added to.
+        				    if (tmp = "1001") then
+        				    tmp <= "0000";
+        				    tmpD <= '1';  -- Every Clock Cycle go high
+        				    end if;
                    end if;     
         
                end process; 
