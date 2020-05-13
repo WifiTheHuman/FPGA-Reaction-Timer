@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Thu Mar 19 13:52:19 2020
-| Host             : CAE-29 running 64-bit major release  (build 9200)
+| Date             : Thu May 14 11:39:19 2020
+| Host             : CAE-27 running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Level_power_routed.rpt -pb Top_Level_power_summary_routed.pb -rpx Top_Level_power_routed.rpx
 | Design           : Top_Level
 | Device           : xc7a100tcsg324-3
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      217 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       59 |     63400 |            0.09 |
-|   Register     |    <0.001 |       99 |    126800 |            0.08 |
-|   CARRY4       |    <0.001 |       14 |     15850 |            0.09 |
+| Slice Logic    |    <0.001 |      208 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       64 |     63400 |            0.10 |
+|   Register     |    <0.001 |       88 |    126800 |            0.07 |
+|   CARRY4       |    <0.001 |       11 |     15850 |            0.07 |
 |   F7/F8 Muxes  |    <0.001 |        3 |     63400 |           <0.01 |
 |   Others       |     0.000 |       21 |       --- |             --- |
-| Signals        |    <0.001 |      144 |       --- |             --- |
+| Signals        |    <0.001 |      135 |       --- |             --- |
 | I/O            |     0.018 |       19 |       210 |            9.05 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.117 |          |           |                 |

@@ -60,7 +60,7 @@ end component;
 component clock_divider_1hz is
 	port(
 		in_clock  : in std_logic;
-		
+		enable : in std_logic;
 		out_clock : out std_logic := '0');
 end component;
 
@@ -87,8 +87,9 @@ begin
    --divider: clock_divider_1hz port map(in_clock => CLK100MHZ,
 	   --                                out_clock => wire_1);
 	--                                   
-divider: my_divider port map(Clk_in => CLK100MHZ,
-                            Clk_out => wire_1);
+divider: clock_divider_1hz port map(in_clock => CLK100MHZ,
+                            enable => '1',
+                            out_clock => wire_1);
 bit_counter0: counter port map(Clock => wire_1,
                               CLR => SW(3),
                               Q => o1,
