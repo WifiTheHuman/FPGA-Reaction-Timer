@@ -1,0 +1,551 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri May 15 20:44:11 2020
+# Process ID: 2648
+# Current directory: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15348 C:\Users\yma82\VHDL373project\thismightwork\rxnmongroup15\Countdown\Countdown.xpr
+# Log file: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/vivado.log
+# Journal file: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 854.602 ; gain = 160.563
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri May 15 20:45:41 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri May 15 20:45:58 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 20:47:09 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 15 20:48:45 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292646040A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2097.414 ; gain = 1225.547
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri May 15 20:51:38 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 20:52:41 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 15 20:54:17 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri May 15 20:56:19 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 20:57:19 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 15 20:58:53 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 21:10:06 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 21:11:33 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 15 21:13:14 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 21:20:15 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 21:21:16 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 15 21:23:27 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 21:28:23 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 21:29:21 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 15 21:32:00 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 21:37:07 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 21:38:13 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 15 21:40:02 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 21:42:40 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 21:43:38 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 15 21:45:16 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 21:48:39 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 21:49:47 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 22:03:54 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 22:05:15 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 15 22:06:49 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 22:08:58 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 22:09:57 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 15 22:11:31 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 22:16:23 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 22:17:22 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 15 22:19:00 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+add_files -norecurse C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/display_div.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 22:30:54 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 22:31:56 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 15 22:33:55 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 22:54:51 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 22:55:56 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 22:56:30 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 22:57:32 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 23:06:54 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 23:08:00 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 23:11:43 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 23:12:42 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 23:20:03 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 23:21:03 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 15 23:22:44 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292646040A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292646040A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri May 15 23:56:25 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri May 15 23:57:38 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2452.148 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 3136.723 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 3136.723 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3136.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 3265.773 ; gain = 1060.324
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 16 00:00:42 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [Labtools 27-3165] End of startup status: LOW
+INFO: [Common 17-344] 'program_hw_devices' was cancelled
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat May 16 00:07:49 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat May 16 00:11:05 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 16 00:12:45 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat May 16 00:16:13 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat May 16 00:22:24 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat May 16 00:24:40 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat May 16 00:25:25 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat May 16 00:27:05 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat May 16 00:28:17 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 16 00:29:54 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat May 16 00:36:24 2020] Launched synth_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat May 16 00:37:25 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 16 00:39:03 2020] Launched impl_1...
+Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.

@@ -68,7 +68,7 @@ set rc [catch {
   set_param chipscope.maxJobs 2
   set_param xicom.use_bs_reader 1
   open_checkpoint Top_Level_routed.dcp
-  set_property webtalk.parent_dir C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/yma82/VHDL373project/Thiswillwork/rxnmongroup15/Countdown/Countdown.cache/wt [current_project]
   catch { write_mem_info -force Top_Level.mmi }
   write_bitstream -force Top_Level.bit 
   catch {write_debug_probes -quiet -force Top_Level}
