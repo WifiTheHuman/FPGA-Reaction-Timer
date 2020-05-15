@@ -29,7 +29,7 @@ entity clock_divider_1hz is
 
 		-- The desired output frequency in Hertz.
 		-- Note that the last entry in the generic block does not have trailing semicolon.
-		OUTPUT_FREQUENCY : integer :=     1
+		OUTPUT_FREQUENCY : integer :=     1000
 	);
 
 	-- The port defines the input and output signals.

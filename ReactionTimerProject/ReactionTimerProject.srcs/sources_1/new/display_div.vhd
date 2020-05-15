@@ -35,7 +35,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity disp_div is
     Port ( Clk_in : in  STD_LOGIC;
-           Clk_out : out  STD_LOGIC_VECTOR(2 downto 0));
+           Clk_out : out  STD_LOGIC_VECTOR(1 downto 0));
 			  
 -- attributes - these are not needed, as they are provided in the constraints file	
 end disp_div;
@@ -46,7 +46,7 @@ architecture Behavioral of disp_div is
     constant clk_limit : std_logic_vector(27 downto 0) := X"00AF07E"; -- 1 Hz   "
 
 	signal clk_ctr : std_logic_vector(27 downto 0);
-	signal temp_clk : std_logic_vector(2 downto 0);
+	signal temp_clk : std_logic_vector(1 downto 0);
 
 begin
 
@@ -55,7 +55,7 @@ begin
 		begin
 		if Clk_in = '1' and Clk_in'Event then
 		  if clk_ctr = clk_limit then				-- if counter == (1Hz count)/2
-		  	 temp_clk <= temp_clk + "001";				--  toggle clock
+		  	 temp_clk <= temp_clk + "01";				--  toggle clock
 			 clk_ctr <= X"0000000";					--  reset counter
 		  else											-- else
 		  	 clk_ctr <= clk_ctr + X"0000001";	--  counter = counter + 1

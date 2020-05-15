@@ -33,6 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Top_Level is
     Port ( SW : in STD_LOGIC_VECTOR (3 downto 0);
+           BTND, BTNC : in STD_LOGIC;
            CA, CB, CC, CD, CE, CF, CG, DP: out STD_LOGIC; 
            AN : out std_logic_vector(7 downto 0);
            LED : out std_logic_vector(0 downto 0); 
@@ -42,13 +43,14 @@ end Top_Level;
 architecture Behavioral of Top_Level is
 component BCD_to_7SEG is
 		   Port ( bcd_in: in std_logic_vector (3 downto 0);	-- Input BCD vector
-    			leds_out: out	std_logic_vector (1 to 8));	-- Output 7-Seg vector                 
+    			leds_out: out	std_logic_vector (1 to 7));	-- Output 7-Seg vector                 
 end component;
 
-signal wire_1 : std_logic;
-signal wire_2, o1, o2, o3, o4, o5, o6, o7, o8 : std_logic_vector(3 downto 0);
-signal q1, q2, q3, q4, q5, q6, q7, q8 : std_logic;
-signal selector : std_logic_vector(2 downto 0);
+signal selector2 : std_logic := '1';
+signal selector3 : std_logic := '0';
+signal wire_2, o1, o2, o3, o4 : std_logic_vector(3 downto 0);
+signal q1, q2, q3, q4, wire_1 : std_logic;
+signal selector : std_logic_vector(1 downto 0);
 
 
 component counter is 
@@ -66,15 +68,15 @@ end component;
 
 component disp_div is 
     Port ( Clk_in : in  STD_LOGIC;
-           Clk_out : out  STD_LOGIC_VECTOR(2 downto 0));
+           Clk_out : out  STD_LOGIC_VECTOR(1 downto 0));
 end component;
 
-component my_divider is
-    Port ( Clk_in : in  STD_LOGIC;
-           Clk_out : out  STD_LOGIC);
-end component;
 
 begin 
+    
+    
+    
+    
     display: BCD_to_7SEG port map(bcd_in => wire_2,
                                   leds_out(1) => CA,
                                   leds_out(2) => CB,
@@ -82,86 +84,70 @@ begin
                                   leds_out(4) => CD,
                                   leds_out(5) => CE,
                                   leds_out(6) => CF,
-                                  leds_out(7) => CG,
-                                  leds_out(8) => DP);
+                                  leds_out(7) => CG
+                                  );
    --divider: clock_divider_1hz port map(in_clock => CLK100MHZ,
 	   --                                out_clock => wire_1);
 	--                                   
 divider: clock_divider_1hz port map(in_clock => CLK100MHZ,
-                            enable => '1',
+                            enable => BTNC,
                             out_clock => wire_1);
 bit_counter0: counter port map(Clock => wire_1,
-                              CLR => SW(3),
+                              CLR => BTND,
                               Q => o1,
                               tmpD => q1);
 bit_counter1: counter port map(Clock => q1,
-                              CLR => SW(3),
+                              CLR => BTND,
                               Q => o2,
                               tmpD => q2);
 bit_counter2: counter port map(Clock => q2,
-                              CLR => SW(3),
+                              CLR => BTND,
                               Q => o3,
                               tmpD => q3);
 bit_counter3: counter port map(Clock => q3,
-                              CLR => SW(3),
+                              CLR => BTND,
                               Q => o4,
                               tmpD => q4);
-bit_counter4: counter port map(Clock => q4,
-                              CLR => SW(3),
-                              Q => o5,
-                              tmpD => q5);
-bit_counter5: counter port map(Clock => q5,
-                              CLR => SW(3),
-                              Q => o6,
-                              tmpD => q6);
-bit_counter6: counter port map(Clock => q6,
-                              CLR => SW(3),
-                              Q => o7,
-                              tmpD => q7);
-bit_counter7: counter port map(Clock => q7,
-                              CLR => SW(3),
-                              Q => o8,
-                              tmpD => q8);
+
 disp_divider : disp_div port map(CLK_IN=>CLK100MHZ, CLK_OUT=>selector);
    
 mux1: process(selector)
          begin
 			case selector is					 
-				when "000"	=>
+				when "00"	=>
 				    --DP <= DP_array(0);
+				    DP <= '1';
 				    wire_2 <= o1;
 				    AN <= "11111110";	  
-				when "001"	=> 
+				    
+				when "01"	=> 
 				    --DP <= DP_array(1);
+				    DP <= '1';
 					 wire_2 <= o2;
 				    AN <= "11111101";
-				when "010"	=>
+				   
+				when "10"	=>
 				    --DP <= DP_array(2);
+				    DP <= '1';
 				    wire_2 <= o3;
-				    AN <= "11111011";	  
-				when "011"	=> 
+				    AN <= "11111011";	
+				     
+				when "11"	=> 
 				    --DP <= DP_array(3);
+				    DP <= '0';
 					 wire_2 <= o4;
 				    AN <= "11110111";
-				when "100"	=>
-				    --DP <= DP_array(4);
-				    wire_2 <= o5;
-				    AN <= "11101111";	  
-				when "101"	=>
-				    --DP <= DP_array(5); 
-					 wire_2 <= o6;
-				    AN <= "11011111";
-				when "110"	=>
-				    --DP <= DP_array(6);
-				    wire_2 <= o7;
-				    AN <= "10111111";	  
-				when "111"	=> 
-				    --DP <= DP_array(7);
-					 wire_2 <= o8;
-				    AN <= "01111111";
+				    
 			end case;
 		end process mux1;
-	
 
-
+--stop_go: process(selector2, selector3)
+--            begin
+--                if (BTNC <= '1') and (selector2 <= '0') then
+--                    selector3 <= '1';
+--                    selector2 <= '1';
+--                elsif (BTNC <= '1') then
+--                    selector2 <= '0';
+--                end if;
+--          end process stop_go;
 end Behavioral;

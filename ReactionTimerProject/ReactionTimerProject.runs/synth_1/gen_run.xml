@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1589413051">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1589504305">
   <File Type="PA-TCL" Name="Top_Level.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Top_Level_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Top_Level_reports.tcl"/>
@@ -41,13 +41,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/Top_Level.vhd">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../VHDL Code/Steves_clock_divider.vhd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

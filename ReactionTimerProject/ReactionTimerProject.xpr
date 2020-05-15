@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="P:/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3c9b536dfb15404dbddd6e7bf2a6a9c0"/>
@@ -90,13 +90,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Top_Level.vhd">
         <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../VHDL Code/Steves_clock_divider.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
