@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/yma82/VHDL373project/Thiswillwork/rxnmongroup15/Countdown/Countdown.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/yma82/VHDL373project/Thisstoppedworking/rxnmongroup15/Countdown/Countdown.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="07590e65c8ba40c1bd4bea6e8936bf08"/>
@@ -21,7 +21,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPOutputRepo" Val="C:/Users/yma82/VHDL373project/Thiswillwork/rxnmongroup15/Countdown/Countdown.cache/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>

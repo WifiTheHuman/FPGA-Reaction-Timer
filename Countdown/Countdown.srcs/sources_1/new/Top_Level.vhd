@@ -112,7 +112,7 @@ bit_counter3: counter port map(Clock => q3,
                               Q => o4,
                               tmpD => q4);
 
-stateCtrl: process(current_state)
+stateCtrl: process(CLK100MHZ)
     begin
         case current_state is
             when prompting => 
@@ -159,6 +159,10 @@ count_controller: process(selector)
                         AN_sig_count <= "11110111";
                         
                 end case;
+                
+            else 
+                AN_sig_count <= "11111111";
+                DP_sig_count <= '1';
             end if;
 		end process count_controller;
 
@@ -187,6 +191,9 @@ promptController: process(prompt_count)
                     AN_sig_prompt <= "11111111";
                 
              end case;
+        else
+            AN_sig_prompt <= "11111111";
+            DP_sig_prompt <= '1';
         end if;
     end process promptController;
 
