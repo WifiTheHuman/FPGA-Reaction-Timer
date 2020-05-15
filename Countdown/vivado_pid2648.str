@@ -1,0 +1,961 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 2648
+License: Customer
+
+Current time: 	Fri May 15 20:44:24 NZST 2020
+Time zone: 	New Zealand Standard Time (Pacific/Auckland)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1680x1050
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 69 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	yma82
+User home directory: C:/Users/yma82
+User working directory: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown
+User country: 	NZ
+User language: 	en
+User locale: 	en_NZ
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/yma82/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/yma82/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/yma82/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/vivado.log
+Vivado journal file location: 	C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/vivado.jou
+Engine tmp dir: 	C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/.Xil/Vivado-2648-ESL16
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@licserver
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	190 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 747 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\yma82\VHDL373project\thismightwork\rxnmongroup15\Countdown\Countdown.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 113 MB (+116453kb) [00:00:11]
+// [Engine Memory]: 748 MB (+633223kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  3027 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 812 MB. GUI used memory: 54 MB. Current time: 5/15/20, 8:44:28 PM NZST
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 854.602 ; gain = 160.563 
+// [Engine Memory]: 816 MB (+31833kb) [00:00:14]
+// Project name: Countdown; location: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown; part: xc7a100tcsg324-3
+dismissDialog("Open Project"); // bB (cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (F, cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (Top_Level.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Level(Behavioral) (Top_Level.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Level(Behavioral) (Top_Level.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 11 seconds
+selectCodeEditor("Top_Level.vhd", 262, 92); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 132, 354); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 168, 310); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 50, 72); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 56, 72); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 58, 97); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 4, 115); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("Top_Level.vhd", 292, 84); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 387, 78); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 435, 122); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("Top_Level.vhd", 236, 97); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri May 15 20:45:41 2020] Launched synth_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bB (cr)
+selectCodeEditor("Top_Level.vhd", 304, 378); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 244, 397); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 252, 344); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri May 15 20:45:58 2020] Launched synth_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Elapsed time: 70 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri May 15 20:47:09 2020] Launched impl_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+selectCodeEditor("Top_Level.vhd", 157, 146); // ch (w, cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 825 MB. GUI used memory: 59 MB. Current time: 5/15/20, 8:48:41 PM NZST
+// Elapsed time: 94 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+dismissDialog("Implementation Completed"); // aj (cr)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 15 20:48:45 2020] Launched impl_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log 
+selectCodeEditor("Top_Level.vhd", 40, 321); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 48, 124); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 48, 124, false, false, false, false, true); // ch (w, cr) - Double Click
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("Top_Level.vhd", 33, 398); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 33, 398, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Top_Level.vhd", 3, 126); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 3, 126, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Top_Level.vhd", 157, 321); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 391, 323); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 4, 128); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 0, 130); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 0, 130); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 51, 396); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 51, 396); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 6, 131); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 2, 131); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 16, 146); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 4, 147); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 1, 148); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 14, 401); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 14, 401, false, false, false, false, true); // ch (w, cr) - Double Click
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 27 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1101 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bB (cr)
+selectCodeEditor("Top_Level.vhd", 183, 348); // ch (w, cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3414] Connected to existing cs_server. 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  5461 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292646040A 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,055 MB. GUI used memory: 62 MB. Current time: 5/15/20, 8:50:06 PM NZST
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2097.414 ; gain = 1225.547 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 2,073 MB (+1275526kb) [00:05:51]
+dismissDialog("Auto Connect"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+// [GUI Memory]: 120 MB (+1069kb) [00:06:13]
+// Elapsed time: 44 seconds
+selectCodeEditor("Top_Level.vhd", 221, 295); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 207, 341); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 29 seconds
+selectCodeEditor("Top_Level.vhd", 343, 339); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri May 15 20:51:38 2020] Launched synth_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("Top_Level.vhd", 223, 215); // ch (w, cr)
+// Elapsed time: 22 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clr_signal"); // l (aP, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("OptionPane.button", "Cancel"); // JButton (A, G)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri May 15 20:52:41 2020] Launched impl_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "Cancel"); // JButton (A, G)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true); // u (O, cr) - Node
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 37 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // aj (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 15 20:54:17 2020] Launched impl_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("Top_Level.vhd", 415, 154); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("Top_Level.vhd", 238, 380); // ch (w, cr)
+typeControlKey((HResource) null, "Top_Level.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 244, 338); // ch (w, cr)
+typeControlKey((HResource) null, "Top_Level.vhd", 'v'); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 34 seconds
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+selectCodeEditor("Top_Level.vhd", 321, 366); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 253, 284); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Level.vhd", 338, 218); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri May 15 20:56:19 2020] Launched synth_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bB (cr)
+selectCodeEditor("Top_Level.vhd", 244, 381); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Elapsed time: 59 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Resetting Runs : addNotify
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri May 15 20:57:19 2020] Launched impl_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bB (cr)
+selectCodeEditor("Top_Level.vhd", 165, 325); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 218, 342); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 202, 351); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 278, 416); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 278, 416, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Top_Level.vhd", 290, 300); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 290, 300); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 291, 436); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 291, 436); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 283, 337); // ch (w, cr)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 81 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+dismissDialog("Implementation Completed"); // aj (cr)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 15 20:58:53 2020] Launched impl_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 117 seconds
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("Top_Level.vhd", 233, 282); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("Top_Level.vhd", 293, 278); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 339, 200); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 262, 327); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 85, 339); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("Top_Level.vhd", 238, 245); // ch (w, cr)
+// Elapsed time: 27 seconds
+selectCodeEditor("Top_Level.vhd", 83, 380); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("Top_Level.vhd", 316, 320); // ch (w, cr)
+// Elapsed time: 119 seconds
+selectCodeEditor("Top_Level.vhd", 279, 334); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 232, 117); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("OptionPane.button", "Cancel"); // JButton (A, G)
+// Elapsed time: 16 seconds
+selectCodeEditor("Top_Level.vhd", 217, 435); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 181, 440); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 358, 197); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Level.vhd", 349, 244); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_Level.vhd", 290, 130); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 410, 211); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 162, 176); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 138, 155); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("Top_Level.vhd", 191, 184); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("Top_Level.vhd", 135, 367); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 124, 376); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("Top_Level.vhd", 308, 110); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 148, 95); // ch (w, cr)
+// Elapsed time: 145 seconds
+selectCodeEditor("Top_Level.vhd", 132, 162); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 132, 162); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri May 15 21:10:06 2020] Launched synth_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+selectCodeEditor("Top_Level.vhd", 269, 287); // ch (w, cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Elapsed time: 86 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Resetting Runs : addNotify
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri May 15 21:11:33 2020] Launched impl_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+selectCodeEditor("Top_Level.vhd", 191, 323); // ch (w, cr)
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("Top_Level.vhd", 191, 323); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 47, 76); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 55, 128); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 55, 128, false, false, false, false, true); // ch (w, cr) - Double Click
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 70 seconds
+selectCodeEditor("Top_Level.vhd", 116, 343); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "Cancel"); // JButton (A, G)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 18 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+dismissDialog("Implementation Completed"); // aj (cr)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 15 21:13:14 2020] Launched impl_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log 
+selectCodeEditor("Top_Level.vhd", 175, 342); // ch (w, cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 19 seconds
+selectCodeEditor("Top_Level.vhd", 549, 358); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 487, 19); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 487, 19); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 485, 321); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "Cancel"); // JButton (A, G)
+selectCodeEditor("Top_Level.vhd", 220, 288); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 27 seconds
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+selectCodeEditor("Top_Level.vhd", 316, 343); // ch (w, cr)
+// Elapsed time: 31 seconds
+selectCodeEditor("Top_Level.vhd", 249, 329); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 258, 321); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("Top_Level.vhd", 271, 110); // ch (w, cr)
+// Elapsed time: 44 seconds
+selectCodeEditor("Top_Level.vhd", 273, 262); // ch (w, cr)
+typeControlKey((HResource) null, "Top_Level.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 255, 298); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 255, 298); // ch (w, cr)
+typeControlKey((HResource) null, "Top_Level.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 322, 290); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 331, 256); // ch (w, cr)
+// Elapsed time: 58 seconds
+selectCodeEditor("Top_Level.vhd", 391, 95); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 351, 141); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 127 MB (+540kb) [00:33:05]
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Level.vhd", 193, 370); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 154, 352); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 172, 336); // ch (w, cr)
+// Elapsed time: 32 seconds
+selectCodeEditor("Top_Level.vhd", 116, 313); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 103, 338); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("Top_Level.vhd", 95, 434); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("Top_Level.vhd", 173, 270); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 89, 415); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("Top_Level.vhd", 329, 392); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 146, 301); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 125, 330); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 149, 376); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,086 MB. GUI used memory: 66 MB. Current time: 5/15/20, 9:20:07 PM NZST
+// Elapsed time: 57 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// al (cr): Save Project: addNotify
+dismissDialog("Run Synthesis"); // A (cr)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bB (cr):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri May 15 21:20:15 2020] Launched synth_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bB (cr)
+selectCodeEditor("Top_Level.vhd", 208, 290); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("Top_Level.vhd", 219, 341); // ch (w, cr)
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 16, true); // u (O, cr) - Node
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Resetting Runs : addNotify
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri May 15 21:21:16 2020] Launched impl_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("Top_Level.vhd", 132, 251); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "Cancel"); // JButton (A, G)
+selectCodeEditor("Top_Level.vhd", 231, 278); // ch (w, cr)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectCodeEditor("Top_Level.vhd", 203, 119); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 138, 57); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 160, 227); // ch (w, cr)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 90 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+dismissDialog("Implementation Completed"); // aj (cr)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 15 21:23:27 2020] Launched impl_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log 
+selectCodeEditor("Top_Level.vhd", 116, 303); // ch (w, cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "Cancel"); // JButton (A, G)
+selectCodeEditor("Top_Level.vhd", 112, 303); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("Top_Level.vhd", 136, 358); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 23 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+selectCodeEditor("Top_Level.vhd", 351, 330); // ch (w, cr)
+// Elapsed time: 51 seconds
+selectCodeEditor("Top_Level.vhd", 289, 411); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 290, 350); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("Top_Level.vhd", 424, 292); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 294, 366); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 22 seconds
+selectCodeEditor("Top_Level.vhd", 332, 293); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 344, 288); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 361, 281); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("Top_Level.vhd", 347, 267); // ch (w, cr)
+typeControlKey((HResource) null, "Top_Level.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 168, 299); // ch (w, cr)
+typeControlKey((HResource) null, "Top_Level.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("Top_Level.vhd", 365, 197); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 212, 260); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 209, 287); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 275, 275); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 56 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Fri May 15 21:28:23 2020] Launched synth_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("Top_Level.vhd", 282, 312); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 259, 405); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Elapsed time: 53 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Resetting Runs : addNotify
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Fri May 15 21:29:21 2020] Launched impl_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+selectCodeEditor("Top_Level.vhd", 141, 365); // ch (w, cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 157 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // aj (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May 15 21:32:00 2020] Launched impl_1... Run output will be captured here: C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/runme.log 
+selectCodeEditor("Top_Level.vhd", 191, 310); // ch (w, cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 50 seconds
+selectCodeEditor("Top_Level.vhd", 181, 255); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "Cancel"); // JButton (A, G)
+selectCodeEditor("Top_Level.vhd", 191, 311); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 214, 129); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 231, 109); // ch (w, cr)
+selectCodeEditor("Top_Level.vhd", 224, 174); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 10 seconds
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/Countdown/Countdown.runs/impl_1/Top_Level.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
