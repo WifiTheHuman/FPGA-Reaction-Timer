@@ -46,8 +46,8 @@ component BCD_to_7SEG is
     			leds_out: out	std_logic_vector (1 to 7));	-- Output 7-Seg vector                 
 end component;
 
-signal selector2 : std_logic := '1';
-signal selector3 : std_logic := '0';
+signal enable_signal : std_logic := '1';
+signal clr_signal, lastButtonState : std_logic := '0';
 signal wire_2, o1, o2, o3, o4 : std_logic_vector(3 downto 0);
 signal q1, q2, q3, q4, wire_1 : std_logic;
 signal selector : std_logic_vector(1 downto 0);
@@ -90,7 +90,7 @@ begin
 	   --                                out_clock => wire_1);
 	--                                   
 divider: clock_divider_1hz port map(in_clock => CLK100MHZ,
-                            enable => BTNC,
+                            enable => enable_signal,
                             out_clock => wire_1);
 bit_counter0: counter port map(Clock => wire_1,
                               CLR => BTND,
@@ -141,13 +141,28 @@ mux1: process(selector)
 			end case;
 		end process mux1;
 
---stop_go: process(selector2, selector3)
+--stop_go: process(clr_signal, enable_signal)
 --            begin
---                if (BTNC <= '1') and (selector2 <= '0') then
---                    selector3 <= '1';
---                    selector2 <= '1';
+--                if (BTNC <= '1') and (enable_signal <= '0') then
+--                    clr_signal <= '1';
+--                    enable_signal <= '1';
 --                elsif (BTNC <= '1') then
---                    selector2 <= '0';
+--                    enable_signal <= '0';
 --                end if;
 --          end process stop_go;
+
+bleshgo: process(CLK100MHZ)
+begin
+  if(rising_edge(CLK100MHZ)) then
+    if(BTNC = '1' and lastButtonState = '0') then      --assuming active-high
+      --Rising edge - do some work...
+      if(enable_signal = '0' and clr_signal = '0') then
+        clr_signal <= '1'; 
+      elsif(enable_signal = '1') then
+        enable_signal <= '0';
+      end if;
+    end if;
+    lastButtonState <= BTNC;
+  end if;
+end process;
 end Behavioral;

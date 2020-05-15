@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Fri May 15 12:58:30 2020
-# Process ID: 16196
+# Start of session at: Fri May 15 17:57:22 2020
+# Process ID: 20836
 # Current directory: C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.runs/synth_1
 # Command line: vivado.exe -log Top_Level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Level.tcl
 # Log file: C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.runs/synth_1/Top_Level.vds
@@ -16,33 +16,32 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-3
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6968 
+INFO: Helper process launched with PID 1504 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 852.309 ; gain = 234.457
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 851.883 ; gain = 234.492
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Top_Level' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:43]
-INFO: [Synth 8-3491] module 'BCD_to_7SEG' declared at 'C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/BCD_to_7SEG.vhd:17' bound to instance 'display' of component 'BCD_to_7SEG' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:75]
+INFO: [Synth 8-3491] module 'BCD_to_7SEG' declared at 'C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/BCD_to_7SEG.vhd:17' bound to instance 'display' of component 'BCD_to_7SEG' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:80]
 INFO: [Synth 8-638] synthesizing module 'BCD_to_7SEG' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/BCD_to_7SEG.vhd:22]
 INFO: [Synth 8-256] done synthesizing module 'BCD_to_7SEG' (1#1) [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/BCD_to_7SEG.vhd:22]
-INFO: [Synth 8-3491] module 'clock_divider_1hz' declared at 'C:/Users/Lachie/Documents/373/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd:21' bound to instance 'divider' of component 'clock_divider_1hz' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:87]
+INFO: [Synth 8-3491] module 'clock_divider_1hz' declared at 'C:/Users/Lachie/Documents/373/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd:21' bound to instance 'divider' of component 'clock_divider_1hz' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:92]
 INFO: [Synth 8-638] synthesizing module 'clock_divider_1hz' [C:/Users/Lachie/Documents/373/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd:54]
 	Parameter INPUT_FREQUENCY bound to: 100000000 - type: integer 
 	Parameter OUTPUT_FREQUENCY bound to: 1000 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'clock_divider_1hz' (2#1) [C:/Users/Lachie/Documents/373/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd:54]
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter0' of component 'counter' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:90]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter0' of component 'counter' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:95]
 INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:15]
 INFO: [Synth 8-256] done synthesizing module 'counter' (3#1) [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:15]
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter1' of component 'counter' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:94]
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter2' of component 'counter' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:98]
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter3' of component 'counter' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:102]
-INFO: [Synth 8-3491] module 'disp_div' declared at 'C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/display_div.vhd:36' bound to instance 'disp_divider' of component 'disp_div' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:107]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter1' of component 'counter' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:99]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter2' of component 'counter' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:103]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter3' of component 'counter' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:107]
+INFO: [Synth 8-3491] module 'disp_div' declared at 'C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/display_div.vhd:36' bound to instance 'disp_divider' of component 'disp_div' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:112]
 INFO: [Synth 8-638] synthesizing module 'disp_div' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/display_div.vhd:43]
 INFO: [Synth 8-256] done synthesizing module 'disp_div' (4#1) [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/display_div.vhd:43]
-WARNING: [Synth 8-614] signal 'o1' is read in the process but is not in the sensitivity list [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:109]
-WARNING: [Synth 8-614] signal 'o2' is read in the process but is not in the sensitivity list [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:109]
-WARNING: [Synth 8-614] signal 'o3' is read in the process but is not in the sensitivity list [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:109]
-WARNING: [Synth 8-614] signal 'o4' is read in the process but is not in the sensitivity list [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:109]
-WARNING: [Synth 8-614] signal 'BTNC' is read in the process but is not in the sensitivity list [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:139]
+WARNING: [Synth 8-614] signal 'o1' is read in the process but is not in the sensitivity list [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:114]
+WARNING: [Synth 8-614] signal 'o2' is read in the process but is not in the sensitivity list [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:114]
+WARNING: [Synth 8-614] signal 'o3' is read in the process but is not in the sensitivity list [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:114]
+WARNING: [Synth 8-614] signal 'o4' is read in the process but is not in the sensitivity list [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:114]
 WARNING: [Synth 8-3848] Net LED in module/entity Top_Level does not have driver. [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:39]
 INFO: [Synth 8-256] done synthesizing module 'Top_Level' (5#1) [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:43]
 WARNING: [Synth 8-3331] design Top_Level has unconnected port LED[0]
@@ -50,9 +49,8 @@ WARNING: [Synth 8-3331] design Top_Level has unconnected port SW[3]
 WARNING: [Synth 8-3331] design Top_Level has unconnected port SW[2]
 WARNING: [Synth 8-3331] design Top_Level has unconnected port SW[1]
 WARNING: [Synth 8-3331] design Top_Level has unconnected port SW[0]
-WARNING: [Synth 8-3331] design Top_Level has unconnected port BTND
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 924.816 ; gain = 306.965
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 925.184 ; gain = 307.793
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -65,12 +63,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 924.816 ; gain = 306.965
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 925.184 ; gain = 307.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 924.816 ; gain = 306.965
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 925.184 ; gain = 307.793
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 924.816 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 925.184 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -180,31 +178,29 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1008.891 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1013.539 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1008.891 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1013.539 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1008.891 ; gain = 391.039
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1013.539 ; gain = 396.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1008.891 ; gain = 391.039
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1013.539 ; gain = 396.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1008.891 ; gain = 391.039
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1013.539 ; gain = 396.148
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'selector3_reg' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:91]
-WARNING: [Synth 8-327] inferring latch for variable 'selector2_reg' [C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/Top_Level.vhd:88]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1008.891 ; gain = 391.039
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1013.539 ; gain = 396.148
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -224,7 +220,7 @@ Detailed RTL Component Info :
 	               17 Bit    Registers := 1     
 	                4 Bit    Registers := 4     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 5     
+	                1 Bit    Registers := 8     
 +---Muxes : 
 	   3 Input     17 Bit        Muxes := 1     
 	   4 Input      8 Bit        Muxes := 1     
@@ -241,6 +237,8 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module Top_Level 
 Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
 +---Muxes : 
 	   4 Input      8 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
@@ -295,29 +293,8 @@ WARNING: [Synth 8-3331] design Top_Level has unconnected port SW[3]
 WARNING: [Synth 8-3331] design Top_Level has unconnected port SW[2]
 WARNING: [Synth 8-3331] design Top_Level has unconnected port SW[1]
 WARNING: [Synth 8-3331] design Top_Level has unconnected port SW[0]
-WARNING: [Synth 8-3331] design Top_Level has unconnected port BTND
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter0/tmpD_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter1/tmpD_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter2/tmpD_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter0/tmp_inferred /\bit_counter0/tmp_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter1/tmp_inferred /\bit_counter1/tmp_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter2/tmp_inferred /\bit_counter2/tmp_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter3/tmp_inferred /\bit_counter3/tmp_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter0/tmp_inferred /\bit_counter0/tmp_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter1/tmp_inferred /\bit_counter1/tmp_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter2/tmp_inferred /\bit_counter2/tmp_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter3/tmp_inferred /\bit_counter3/tmp_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter0/tmp_inferred /\bit_counter0/tmp_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter1/tmp_inferred /\bit_counter1/tmp_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter2/tmp_inferred /\bit_counter2/tmp_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter3/tmp_inferred /\bit_counter3/tmp_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter0/tmp_inferred /\bit_counter0/tmp_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter1/tmp_inferred /\bit_counter1/tmp_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter2/tmp_inferred /\bit_counter2/tmp_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bit_counter3/tmp_inferred /\bit_counter3/tmp_reg[3] )
-WARNING: [Synth 8-3332] Sequential element (selector2_reg) is unused and will be removed from module Top_Level.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1008.891 ; gain = 391.039
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1013.539 ; gain = 396.148
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -329,13 +306,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1008.891 ; gain = 391.039
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1013.539 ; gain = 396.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1020.750 ; gain = 402.898
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1022.930 ; gain = 405.539
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -347,7 +324,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1020.750 ; gain = 402.898
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 1022.930 ; gain = 405.539
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -371,13 +348,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1028.297 ; gain = 410.445
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1030.984 ; gain = 413.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1028.297 ; gain = 410.445
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1030.984 ; gain = 413.594
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -396,25 +373,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1028.297 ; gain = 410.445
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1030.984 ; gain = 413.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1028.297 ; gain = 410.445
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1030.984 ; gain = 413.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1028.297 ; gain = 410.445
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1030.984 ; gain = 413.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1028.297 ; gain = 410.445
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1030.984 ; gain = 413.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -431,49 +408,55 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |     7|
-|3     |LUT1   |     1|
-|4     |LUT2   |     5|
-|5     |LUT3   |     1|
-|6     |LUT4   |     1|
-|7     |LUT5   |     1|
-|8     |LUT6   |     4|
-|9     |FDRE   |    30|
-|10    |IBUF   |     1|
-|11    |OBUF   |    16|
-|12    |OBUFT  |     1|
+|2     |CARRY4 |    11|
+|3     |LUT1   |     6|
+|4     |LUT2   |    22|
+|5     |LUT3   |     6|
+|6     |LUT4   |    18|
+|7     |LUT5   |     2|
+|8     |LUT6   |    20|
+|9     |FDCE   |    34|
+|10    |FDRE   |    35|
+|11    |IBUF   |     3|
+|12    |OBUF   |    16|
+|13    |OBUFT  |     1|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+---------------+---------+------+
-|      |Instance       |Module   |Cells |
-+------+---------------+---------+------+
-|1     |top            |         |    69|
-|2     |  disp_divider |disp_div |    50|
-+------+---------------+---------+------+
++------+---------------+------------------+------+
+|      |Instance       |Module            |Cells |
++------+---------------+------------------+------+
+|1     |top            |                  |   175|
+|2     |  bit_counter0 |counter           |    10|
+|3     |  bit_counter1 |counter_0         |    10|
+|4     |  bit_counter2 |counter_1         |    10|
+|5     |  bit_counter3 |counter_2         |     8|
+|6     |  disp_divider |disp_div          |    61|
+|7     |  divider      |clock_divider_1hz |    52|
++------+---------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1028.297 ; gain = 410.445
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1030.984 ; gain = 413.594
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:52 . Memory (MB): peak = 1028.297 ; gain = 326.371
-Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1028.297 ; gain = 410.445
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1030.984 ; gain = 325.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1030.984 ; gain = 413.594
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1028.297 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1042.039 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1037.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1046.559 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-48 Infos, 58 Warnings, 33 Critical Warnings and 0 Errors encountered.
+29 Infos, 52 Warnings, 33 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1037.801 ; gain = 731.922
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1037.801 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1046.559 ; gain = 741.641
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1046.559 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.runs/synth_1/Top_Level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Level_utilization_synth.rpt -pb Top_Level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri May 15 12:59:45 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri May 15 17:58:42 2020...
