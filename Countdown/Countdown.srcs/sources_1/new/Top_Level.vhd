@@ -52,6 +52,12 @@ component DeBounce is
         );
 end component;
 
+component prompt_state_count is
+    Port ( Clock : in STD_LOGIC;
+           Reset : in STD_LOGIC;
+           pulse_out : out STD_LOGIC);
+end component;
+
 type state_t is (prompting, counting, displaying);
 signal current_state : state_t := prompting;
 
@@ -67,6 +73,8 @@ signal prompt_clr_signal : std_logic := '0';
 signal nothing : std_logic;
 signal prompt_count : std_logic_vector(3 downto 0);
 signal prompt_done : std_logic := '0';
+
+signal nothing2: std_logic;
 
 --count stuff
 signal q1, q2, q3, q4, count_div_output : std_logic;
@@ -128,7 +136,9 @@ BTNC_debouncer: DeBounce port map(Clock => CLK100MHZ,
                                       button_in => BTNC,
                                       pulse_out => BTNC_debounced);
 
-
+prompt_state_counter: prompt_state_count port map(Clock => CLK100MHZ,
+                                            Reset => '0',
+                                            pulse_out => prompt_done);
 
 stateCtrl: process(CLK100MHZ)
     begin
@@ -224,7 +234,7 @@ promptController: process(prompt_count)
                 when "0011" =>
                     AN_sig_prompt <= "11111111";
                     --prompt_clr_signal <= '1';
-                    prompt_done <= '1';
+                    --prompt_done <= '1';
                     DP_sig_prompt <= '1';
                     
                 when others =>

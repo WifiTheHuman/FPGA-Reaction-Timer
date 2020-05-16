@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/yma82/squareone/rxnmongroup15/Countdown/Countdown.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/yma82/wraparound/rxnmongroup15/Countdown/Countdown.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="07590e65c8ba40c1bd4bea6e8936bf08"/>
@@ -89,6 +89,12 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../VHDL Code/prompt_clock_divider_1hz.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/prompt_state_count.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
