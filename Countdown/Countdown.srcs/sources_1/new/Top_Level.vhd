@@ -44,11 +44,22 @@ component disp_div is
            Clk_out : out  STD_LOGIC_VECTOR(1 downto 0));
 end component;
 
+component DeBounce is
+    port(   Clock : in std_logic;
+                Reset : in std_logic;
+            button_in : in std_logic;
+            pulse_out : out std_logic
+        );
+end component;
+
 type state_t is (prompting, counting, displaying);
 signal current_state : state_t := prompting;
 
 signal AN_sig_prompt, AN_sig_count : std_logic_vector(0 to 7):= "11111111";
 signal DP_sig_prompt, DP_sig_count : std_logic := '1';
+
+signal debounce_sig : std_logic;
+signal BTNC_debounced : std_logic;
 
 --prompt stuff
 signal prompt_enable : std_logic;
@@ -113,6 +124,15 @@ bit_counter3: counter port map(Clock => q3,
                               Q => o4,
                               tmpD => q4);
 
+BTNC_debouncer: DeBounce port map(Clock => debounce_sig,
+                                      Reset => '0',
+                                      button_in => BTNC,
+                                      pulse_out => BTNC_debounced);
+
+Debounce_div: clock_divider_1hz port map(in_clock => CLK100MHZ,
+                            enable => '1',
+                            out_clock => debounce_sig);
+
 stateCtrl: process(CLK100MHZ)
     begin
         case current_state is
@@ -134,9 +154,9 @@ stateCtrl: process(CLK100MHZ)
                 LED(1) <= '1';
                 LED(2) <= '0';
                 
-                --if BTNC = '1' then
-                --    current_state <= displaying;
-                --end if;
+                if BTNC_debounced = '1' then
+                    current_state <= displaying;
+                end if;
                 
             when displaying => 
                 prompt_enable <= '0';
@@ -144,7 +164,7 @@ stateCtrl: process(CLK100MHZ)
                 LED(1) <= '0';
                 LED(2) <= '1';
                 
-                --if BTNC = '1' then
+                --if BTNC_debounced = '1' then
                 --    current_state <= prompting;
                 --end if;
                 
@@ -206,7 +226,7 @@ promptController: process(prompt_count)
                     DP_sig_prompt <= '0';
                 when "0011" =>
                     AN_sig_prompt <= "11111111";
-                    prompt_clr_signal <= '1';
+                    --prompt_clr_signal <= '1';
                     prompt_done <= '1';
                     DP_sig_prompt <= '1';
                     

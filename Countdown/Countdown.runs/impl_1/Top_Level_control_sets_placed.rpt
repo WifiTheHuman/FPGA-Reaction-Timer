@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sat May 16 22:23:27 2020
+| Date         : Sat May 16 23:13:15 2020
 | Host         : ESL16 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_Level_control_sets_placed.rpt
 | Design       : Top_Level
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    14 |
-|    Minimum number of control sets                        |    14 |
+| Total control sets                                       |    17 |
+|    Minimum number of control sets                        |    17 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    69 |
+| Unused register locations in slices containing registers |    80 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    14 |
-| >= 0 to < 4        |     5 |
+| Total control sets |    17 |
+| >= 0 to < 4        |     6 |
 | >= 4 to < 6        |     6 |
 | >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     3 |
+| >= 16              |     5 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,35 +58,38 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              28 |            9 |
-| No           | No                    | Yes                    |              50 |           12 |
-| No           | Yes                   | No                     |              29 |            8 |
+| No           | No                    | No                     |              37 |           15 |
+| No           | No                    | Yes                    |              46 |           11 |
+| No           | Yes                   | No                     |              46 |           13 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |              31 |            8 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------------------+---------------+---------------------------+------------------+----------------+
-|             Clock Signal            | Enable Signal |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
-+-------------------------------------+---------------+---------------------------+------------------+----------------+
-|  PromptCounter/prompt_clr_signal__0 |               |                           |                1 |              1 |
-|  PromptCounter/prompt_done__0       |               |                           |                1 |              1 |
-|  PromptCounter/tmp_reg[2]_0         |               | LED_OBUF_BUFG[1]          |                1 |              1 |
-|  current_state_reg[0]_i_1_n_0       |               |                           |                1 |              1 |
-|  CLK100MHZ_IBUF_BUFG                |               |                           |                1 |              2 |
-|  bit_counter2/tmpD_reg_0            |               |                           |                1 |              4 |
-|  prompt_divider/CLK                 |               | prompt_clr_signal         |                1 |              4 |
-|  LED_OBUF_BUFG[1]                   |               |                           |                1 |              4 |
-|  count_divider/out_clock_reg_0      |               |                           |                1 |              5 |
-|  bit_counter1/tmpD_reg_0            |               |                           |                1 |              5 |
-|  bit_counter0/CLK                   |               |                           |                1 |              5 |
-|  CLK100MHZ_IBUF_BUFG                |               | count_divider/LED_OBUF[0] |                4 |             18 |
-|  CLK100MHZ_IBUF_BUFG                |               | disp_divider/clear        |                7 |             28 |
-|  CLK100MHZ_IBUF_BUFG                |               | LED_OBUF_BUFG[1]          |                7 |             28 |
-+-------------------------------------+---------------+---------------------------+------------------+----------------+
++--------------------------------+----------------------+-------------------------------------+------------------+----------------+
+|          Clock Signal          |     Enable Signal    |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++--------------------------------+----------------------+-------------------------------------+------------------+----------------+
+| ~LED_OBUF[2]                   |                      |                                     |                1 |              1 |
+|  PromptCounter/tmp_reg[2]_0    |                      | prompt_divider/current_state_reg[0] |                1 |              1 |
+|  PromptCounter/prompt_done__0  |                      |                                     |                1 |              1 |
+|  BTNC_debouncer/E[0]           |                      |                                     |                1 |              2 |
+|  CLK100MHZ_IBUF_BUFG           |                      |                                     |                2 |              3 |
+|  count_reg[31]_i_2_n_0         |                      |                                     |                2 |              3 |
+|  prompt_divider/out_clock      |                      |                                     |                2 |              4 |
+|  wire_2_reg[3]_i_2_n_0         |                      |                                     |                1 |              4 |
+|  bit_counter2/tmpD_reg_0       |                      |                                     |                1 |              4 |
+|  count_divider/out_clock_reg_0 |                      |                                     |                1 |              5 |
+|  bit_counter0/CLK              |                      |                                     |                2 |              5 |
+|  bit_counter1/tmpD_reg_0       |                      |                                     |                1 |              5 |
+|  CLK100MHZ_IBUF_BUFG           |                      | Debounce_div/count[16]_i_1__1_n_0   |                5 |             17 |
+|  CLK100MHZ_IBUF_BUFG           |                      | count_divider/count[16]_i_2__0_n_0  |                5 |             18 |
+|  CLK100MHZ_IBUF_BUFG           |                      | prompt_divider/current_state_reg[0] |                6 |             28 |
+|  CLK100MHZ_IBUF_BUFG           |                      | disp_divider/clear                  |                7 |             28 |
+|  count_reg[31]_i_2_n_0         | BTNC_debouncer/state | BTNC_debouncer/count[31]_i_1_n_0    |                8 |             31 |
++--------------------------------+----------------------+-------------------------------------+------------------+----------------+
 
 

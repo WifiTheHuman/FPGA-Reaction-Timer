@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-3
 
@@ -32,6 +33,7 @@ set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   {C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/BCD_to_7SEG.vhd}
   {C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd}
+  C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Button_debouncer.vhd
   C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/display_div.vhd
   {C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd}
   {C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/VHDL Code/prompt_divider.vhd}
