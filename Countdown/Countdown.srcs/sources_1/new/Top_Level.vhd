@@ -113,7 +113,7 @@ bit_counter3: counter port map(Clock => q3,
                               Q => o4,
                               tmpD => q4);
 
-stateCtrl: process(prompt_done, BTNC)
+stateCtrl: process(CLK100MHZ)
     begin
         case current_state is
             when prompting => 
