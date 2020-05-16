@@ -2,12 +2,12 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sat May 16 23:11:35 2020
-# Process ID: 10184
-# Current directory: C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.runs/synth_1
+# Start of session at: Sun May 17 02:36:41 2020
+# Process ID: 15700
+# Current directory: C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.runs/synth_1
 # Command line: vivado.exe -log Top_Level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Level.tcl
-# Log file: C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.runs/synth_1/Top_Level.vds
-# Journal file: C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.runs/synth_1\vivado.jou
+# Log file: C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.runs/synth_1/Top_Level.vds
+# Journal file: C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Top_Level.tcl -notrace
 Command: synth_design -top Top_Level -part xc7a100tcsg324-3
@@ -16,55 +16,55 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-3
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14588 
+INFO: Helper process launched with PID 8000 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 873.031 ; gain = 234.578
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 873.250 ; gain = 234.090
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Top_Level' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:13]
-INFO: [Synth 8-3491] module 'BCD_to_7SEG' declared at 'C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/BCD_to_7SEG.vhd:17' bound to instance 'display' of component 'BCD_to_7SEG' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'BCD_to_7SEG' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/BCD_to_7SEG.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'BCD_to_7SEG' (1#1) [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/BCD_to_7SEG.vhd:22]
-INFO: [Synth 8-3491] module 'disp_div' declared at 'C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/display_div.vhd:36' bound to instance 'disp_divider' of component 'disp_div' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:95]
-INFO: [Synth 8-638] synthesizing module 'disp_div' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/display_div.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'disp_div' (2#1) [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/display_div.vhd:43]
-INFO: [Synth 8-3491] module 'prompt_clock_divider_1hz' declared at 'C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/VHDL Code/prompt_divider.vhd:21' bound to instance 'prompt_divider' of component 'prompt_clock_divider_1hz' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:97]
-INFO: [Synth 8-638] synthesizing module 'prompt_clock_divider_1hz' [C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/VHDL Code/prompt_divider.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'Top_Level' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:13]
+INFO: [Synth 8-3491] module 'BCD_to_7SEG' declared at 'C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/BCD_to_7SEG.vhd:17' bound to instance 'display' of component 'BCD_to_7SEG' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'BCD_to_7SEG' [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/BCD_to_7SEG.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'BCD_to_7SEG' (1#1) [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/BCD_to_7SEG.vhd:22]
+INFO: [Synth 8-3491] module 'disp_div' declared at 'C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/display_div.vhd:36' bound to instance 'disp_divider' of component 'disp_div' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'disp_div' [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/display_div.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'disp_div' (2#1) [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/display_div.vhd:43]
+INFO: [Synth 8-3491] module 'prompt_clock_divider_1hz' declared at 'C:/Users/yma82/aaa/rxnmongroup15/VHDL Code/prompt_clock_divider_1hz.vhd:21' bound to instance 'prompt_divider' of component 'prompt_clock_divider_1hz' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'prompt_clock_divider_1hz' [C:/Users/yma82/aaa/rxnmongroup15/VHDL Code/prompt_clock_divider_1hz.vhd:54]
 	Parameter INPUT_FREQUENCY bound to: 100000000 - type: integer 
 	Parameter OUTPUT_FREQUENCY bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'prompt_clock_divider_1hz' (3#1) [C:/Users/yma82/VHDL373project/thismightwork/rxnmongroup15/VHDL Code/prompt_divider.vhd:54]
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'PromptCounter' of component 'counter' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:101]
-INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:15]
-INFO: [Synth 8-256] done synthesizing module 'counter' (4#1) [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:15]
-INFO: [Synth 8-3491] module 'clock_divider_1hz' declared at 'C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd:21' bound to instance 'count_divider' of component 'clock_divider_1hz' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'clock_divider_1hz' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'prompt_clock_divider_1hz' (3#1) [C:/Users/yma82/aaa/rxnmongroup15/VHDL Code/prompt_clock_divider_1hz.vhd:54]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'PromptCounter' of component 'counter' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'counter' (4#1) [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:15]
+INFO: [Synth 8-3491] module 'clock_divider_1hz' declared at 'C:/Users/yma82/aaa/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd:21' bound to instance 'count_divider' of component 'clock_divider_1hz' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'clock_divider_1hz' [C:/Users/yma82/aaa/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd:54]
 	Parameter INPUT_FREQUENCY bound to: 100000000 - type: integer 
 	Parameter OUTPUT_FREQUENCY bound to: 1000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clock_divider_1hz' (5#1) [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd:54]
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter0' of component 'counter' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:110]
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter1' of component 'counter' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:114]
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter2' of component 'counter' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:118]
-INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter3' of component 'counter' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:122]
-INFO: [Synth 8-3491] module 'DeBounce' declared at 'C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Button_debouncer.vhd:5' bound to instance 'BTNC_debouncer' of component 'DeBounce' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:127]
-INFO: [Synth 8-638] synthesizing module 'DeBounce' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Button_debouncer.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'DeBounce' (6#1) [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Button_debouncer.vhd:13]
-INFO: [Synth 8-3491] module 'clock_divider_1hz' declared at 'C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd:21' bound to instance 'Debounce_div' of component 'clock_divider_1hz' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:132]
-WARNING: [Synth 8-614] signal 'current_state' is read in the process but is not in the sensitivity list [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:136]
-WARNING: [Synth 8-614] signal 'prompt_done' is read in the process but is not in the sensitivity list [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:136]
-WARNING: [Synth 8-614] signal 'BTNC_debounced' is read in the process but is not in the sensitivity list [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:136]
-WARNING: [Synth 8-614] signal 'current_state' is read in the process but is not in the sensitivity list [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:175]
-WARNING: [Synth 8-614] signal 'o1' is read in the process but is not in the sensitivity list [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:175]
-WARNING: [Synth 8-614] signal 'o2' is read in the process but is not in the sensitivity list [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:175]
-WARNING: [Synth 8-614] signal 'o3' is read in the process but is not in the sensitivity list [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:175]
-WARNING: [Synth 8-614] signal 'o4' is read in the process but is not in the sensitivity list [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:175]
-WARNING: [Synth 8-614] signal 'current_state' is read in the process but is not in the sensitivity list [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:212]
-INFO: [Synth 8-256] done synthesizing module 'Top_Level' (7#1) [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider_1hz' (5#1) [C:/Users/yma82/aaa/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd:54]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter0' of component 'counter' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:110]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter1' of component 'counter' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:114]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter2' of component 'counter' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:118]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd:9' bound to instance 'bit_counter3' of component 'counter' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:122]
+INFO: [Synth 8-3491] module 'DeBounce' declared at 'C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Button_debouncer.vhd:5' bound to instance 'BTNC_debouncer' of component 'DeBounce' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'DeBounce' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Button_debouncer.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'DeBounce' (6#1) [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Button_debouncer.vhd:13]
+INFO: [Synth 8-3491] module 'clock_divider_1hz' declared at 'C:/Users/yma82/aaa/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd:21' bound to instance 'Debounce_div' of component 'clock_divider_1hz' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:132]
+WARNING: [Synth 8-614] signal 'current_state' is read in the process but is not in the sensitivity list [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:136]
+WARNING: [Synth 8-614] signal 'prompt_done' is read in the process but is not in the sensitivity list [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:136]
+WARNING: [Synth 8-614] signal 'BTNC_debounced' is read in the process but is not in the sensitivity list [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:136]
+WARNING: [Synth 8-614] signal 'current_state' is read in the process but is not in the sensitivity list [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:175]
+WARNING: [Synth 8-614] signal 'o1' is read in the process but is not in the sensitivity list [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:175]
+WARNING: [Synth 8-614] signal 'o2' is read in the process but is not in the sensitivity list [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:175]
+WARNING: [Synth 8-614] signal 'o3' is read in the process but is not in the sensitivity list [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:175]
+WARNING: [Synth 8-614] signal 'o4' is read in the process but is not in the sensitivity list [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:175]
+WARNING: [Synth 8-614] signal 'current_state' is read in the process but is not in the sensitivity list [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:212]
+INFO: [Synth 8-256] done synthesizing module 'Top_Level' (7#1) [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:13]
 WARNING: [Synth 8-3331] design Top_Level has unconnected port SW[3]
 WARNING: [Synth 8-3331] design Top_Level has unconnected port SW[2]
 WARNING: [Synth 8-3331] design Top_Level has unconnected port SW[1]
 WARNING: [Synth 8-3331] design Top_Level has unconnected port SW[0]
 WARNING: [Synth 8-3331] design Top_Level has unconnected port BTND
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 946.871 ; gain = 308.418
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 946.082 ; gain = 306.922
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -77,106 +77,106 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 946.871 ; gain = 308.418
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 946.082 ; gain = 306.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 946.871 ; gain = 308.418
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 946.082 ; gain = 306.922
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 946.871 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 946.082 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:17]
+Parsing XDC File [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:17]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:18]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:19]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:19]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:20]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:21]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:22]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:23]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:24]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:25]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:26]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:27]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:28]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:28]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED16_B'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:49]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'LED16_B'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:49]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED16_G'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'LED16_G'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:50]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED16_R'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:51]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'LED16_R'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:51]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED17_B'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:52]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'LED17_B'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:52]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED17_G'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:53]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'LED17_G'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:53]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED17_R'. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'LED17_R'. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc:54]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Level_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yma82/aaa/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Level_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1045.012 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1044.523 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1045.012 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1044.523 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1045.012 ; gain = 406.559
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1044.523 ; gain = 405.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1045.012 ; gain = 406.559
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1044.523 ; gain = 405.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1045.012 ; gain = 406.559
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1044.523 ; gain = 405.363
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "AN_sig_prompt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'DP_sig_prompt_reg' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:83]
-WARNING: [Synth 8-327] inferring latch for variable 'current_state_reg' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:138]
-WARNING: [Synth 8-327] inferring latch for variable 'wire_2_reg' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:85]
-WARNING: [Synth 8-327] inferring latch for variable 'prompt_done_reg' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:230]
-WARNING: [Synth 8-327] inferring latch for variable 'prompt_clr_signal_reg' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:102]
-WARNING: [Synth 8-327] inferring latch for variable 'count_enable_signal_reg' [C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:108]
+WARNING: [Synth 8-327] inferring latch for variable 'DP_sig_prompt_reg' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:83]
+WARNING: [Synth 8-327] inferring latch for variable 'current_state_reg' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:138]
+WARNING: [Synth 8-327] inferring latch for variable 'wire_2_reg' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:85]
+WARNING: [Synth 8-327] inferring latch for variable 'prompt_done_reg' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:230]
+WARNING: [Synth 8-327] inferring latch for variable 'prompt_clr_signal_reg' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:102]
+WARNING: [Synth 8-327] inferring latch for variable 'count_enable_signal_reg' [C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd:108]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1045.012 ; gain = 406.559
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1044.523 ; gain = 405.363
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -317,7 +317,7 @@ WARNING: [Synth 8-3331] design Top_Level has unconnected port BTND
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (prompt_clr_signal_reg)
 WARNING: [Synth 8-3332] Sequential element (prompt_clr_signal_reg) is unused and will be removed from module Top_Level.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1045.012 ; gain = 406.559
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1044.523 ; gain = 405.363
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -329,13 +329,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1045.012 ; gain = 406.559
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1044.523 ; gain = 405.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1049.246 ; gain = 410.793
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1047.570 ; gain = 408.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -347,7 +347,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1049.246 ; gain = 410.793
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1047.570 ; gain = 408.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -371,13 +371,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.801 ; gain = 417.348
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.113 ; gain = 415.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.801 ; gain = 417.348
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.113 ; gain = 415.953
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -396,25 +396,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.801 ; gain = 417.348
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.113 ; gain = 415.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.801 ; gain = 417.348
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.113 ; gain = 415.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.801 ; gain = 417.348
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.113 ; gain = 415.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.801 ; gain = 417.348
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.113 ; gain = 415.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -465,18 +465,18 @@ Report Instance Areas:
 |12    |  prompt_divider |prompt_clock_divider_1hz |    73|
 +------+-----------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.801 ; gain = 417.348
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.113 ; gain = 415.953
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1055.801 ; gain = 319.207
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.801 ; gain = 417.348
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1055.113 ; gain = 317.512
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1055.113 ; gain = 415.953
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1067.852 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1067.168 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1069.980 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1069.539 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 9 instances were transformed.
   LD => LDCE: 7 instances
@@ -486,10 +486,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 40 Infos, 57 Warnings, 18 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1069.980 ; gain = 741.035
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1069.980 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1069.539 ; gain = 740.637
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1069.539 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.runs/synth_1/Top_Level.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.runs/synth_1/Top_Level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Level_utilization_synth.rpt -pb Top_Level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat May 16 23:12:26 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun May 17 02:37:33 2020...

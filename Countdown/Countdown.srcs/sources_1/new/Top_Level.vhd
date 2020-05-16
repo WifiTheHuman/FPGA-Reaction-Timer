@@ -59,7 +59,7 @@ signal AN_sig_prompt, AN_sig_count : std_logic_vector(0 to 7):= "11111111";
 signal DP_sig_prompt, DP_sig_count : std_logic := '1';
 
 signal debounce_sig : std_logic;
-signal BTNC_debounced : std_logic;
+signal BTNC_debounced : std_logic := '0';
 
 --prompt stuff
 signal prompt_enable : std_logic;

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/yma82/VHDL373project/attempt5/rxnmongroup15/Countdown/Countdown.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/yma82/aaa/rxnmongroup15/Countdown/Countdown.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="07590e65c8ba40c1bd4bea6e8936bf08"/>
@@ -88,7 +88,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../thismightwork/rxnmongroup15/VHDL Code/prompt_divider.vhd">
+      <File Path="$PPRDIR/../VHDL Code/prompt_clock_divider_1hz.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -100,11 +100,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/bd/test_block_1/test_block_1.bd">
+      <File Path="$PPRDIR/../../../thismightwork/rxnmongroup15/VHDL Code/prompt_divider.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
