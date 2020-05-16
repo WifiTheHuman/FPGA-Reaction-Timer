@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sat May 16 04:18:09 2020
+| Date         : Sat May 16 18:43:54 2020
 | Host         : ESL16 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Top_Level_utilization_synth.rpt -pb Top_Level_utilization_synth.pb
 | Design       : Top_Level
@@ -152,9 +152,9 @@ Table of Contents
 | LUT4     |   29 |                 LUT |
 | LUT6     |   23 |                 LUT |
 | LUT2     |   20 |                 LUT |
-| OBUF     |   18 |                  IO |
+| OBUF     |   19 |                  IO |
 | CARRY4   |   18 |          CarryLogic |
-| OBUFT    |   14 |                  IO |
+| OBUFT    |   13 |                  IO |
 | LUT5     |    7 |                 LUT |
 | LUT1     |    7 |                 LUT |
 | LDCE     |    6 |        Flop & Latch |

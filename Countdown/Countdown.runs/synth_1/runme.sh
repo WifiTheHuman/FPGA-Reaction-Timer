@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/yma82/VHDL373project/Thisstoppedworking/rxnmongroup15/Countdown/Countdown.runs/synth_1'
+HD_PWD='C:/Users/yma82/VHDL373project/Imdoingmybest/rxnmongroup15/Countdown/Countdown.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

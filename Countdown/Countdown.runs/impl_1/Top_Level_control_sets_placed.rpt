@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sat May 16 04:19:16 2020
+| Date         : Sat May 16 18:44:41 2020
 | Host         : ESL16 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_Level_control_sets_placed.rpt
 | Design       : Top_Level
@@ -58,8 +58,8 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              27 |           11 |
-| No           | No                    | Yes                    |              50 |           13 |
+| No           | No                    | No                     |              27 |           10 |
+| No           | No                    | Yes                    |              50 |           15 |
 | No           | Yes                   | No                     |              29 |            8 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
@@ -70,22 +70,22 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------------------+---------------+---------------------------------+------------------+----------------+
-|             Clock Signal            | Enable Signal |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
-+-------------------------------------+---------------+---------------------------------+------------------+----------------+
-|  PromptCounter/prompt_clr_signal__0 |               |                                 |                1 |              1 |
-|  PromptCounter/current_state__0     |               |                                 |                1 |              1 |
-|  PromptCounter/tmp_reg[2]_0         |               | current_state_BUFG[0]           |                1 |              1 |
-|  CLK100MHZ_IBUF_BUFG                |               |                                 |                1 |              2 |
-|  bit_counter2/tmpD_reg_0            |               |                                 |                1 |              4 |
-|  prompt_divider/CLK                 |               | prompt_clr_signal               |                1 |              4 |
-|  current_state_BUFG[0]              |               |                                 |                3 |              4 |
-|  count_divider/out_clock_reg_0      |               |                                 |                1 |              5 |
-|  bit_counter0/CLK                   |               |                                 |                2 |              5 |
-|  bit_counter1/tmpD_reg_0            |               |                                 |                1 |              5 |
-|  CLK100MHZ_IBUF_BUFG                |               | count_divider/count[16]_i_2_n_0 |                5 |             18 |
-|  CLK100MHZ_IBUF_BUFG                |               | disp_divider/clear              |                7 |             28 |
-|  CLK100MHZ_IBUF_BUFG                |               | current_state_BUFG[0]           |                7 |             28 |
-+-------------------------------------+---------------+---------------------------------+------------------+----------------+
++-------------------------------------+---------------+---------------------------+------------------+----------------+
+|             Clock Signal            | Enable Signal |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++-------------------------------------+---------------+---------------------------+------------------+----------------+
+|  PromptCounter/tmp_reg[2]_0         |               | LED_OBUF_BUFG[1]          |                1 |              1 |
+|  PromptCounter/prompt_clr_signal__0 |               |                           |                1 |              1 |
+|  PromptCounter/current_state__0     |               |                           |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG                |               |                           |                1 |              2 |
+|  bit_counter2/tmpD_reg_0            |               |                           |                1 |              4 |
+|  prompt_divider/CLK                 |               | prompt_clr_signal         |                1 |              4 |
+|  LED_OBUF_BUFG[1]                   |               |                           |                2 |              4 |
+|  count_divider/out_clock_reg_0      |               |                           |                2 |              5 |
+|  bit_counter1/tmpD_reg_0            |               |                           |                1 |              5 |
+|  bit_counter0/CLK                   |               |                           |                1 |              5 |
+|  CLK100MHZ_IBUF_BUFG                |               | count_divider/LED_OBUF[0] |                6 |             18 |
+|  CLK100MHZ_IBUF_BUFG                |               | disp_divider/clear        |                7 |             28 |
+|  CLK100MHZ_IBUF_BUFG                |               | LED_OBUF_BUFG[1]          |                8 |             28 |
++-------------------------------------+---------------+---------------------------+------------------+----------------+
 
 

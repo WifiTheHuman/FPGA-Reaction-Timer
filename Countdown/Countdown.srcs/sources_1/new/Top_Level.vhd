@@ -119,12 +119,19 @@ stateCtrl: process(CLK100MHZ)
                 prompt_enable <= '1';
                 count_enable_signal <= '0';
                 LED(0) <= '1';
+                LED(1) <= '0';
+                LED(2) <= '0';
             when counting => 
                 prompt_enable <= '0';
                 count_enable_signal <= '1';
+                LED(0) <= '0';
                 LED(1) <= '1';
+                LED(2) <= '0';
             when displaying => 
                 prompt_enable <= '0';
+                LED(0) <= '0';
+                LED(1) <= '0';
+                LED(2) <= '1';
         end case;
                 
     end process stateCtrl;
