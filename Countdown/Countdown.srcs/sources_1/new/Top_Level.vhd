@@ -56,6 +56,7 @@ signal prompt_divider_output : std_logic;
 signal prompt_clr_signal : std_logic := '0';
 signal nothing : std_logic;
 signal prompt_count : std_logic_vector(3 downto 0);
+signal prompt_done : std_logic := '0';
 
 --count stuff
 signal q1, q2, q3, q4, count_div_output : std_logic;
@@ -112,7 +113,7 @@ bit_counter3: counter port map(Clock => q3,
                               Q => o4,
                               tmpD => q4);
 
-stateCtrl: process(CLK100MHZ)
+stateCtrl: process(prompt_done, BTNC)
     begin
         case current_state is
             when prompting => 
@@ -121,17 +122,32 @@ stateCtrl: process(CLK100MHZ)
                 LED(0) <= '1';
                 LED(1) <= '0';
                 LED(2) <= '0';
+                
+                if prompt_done = '1' then
+                    current_state <= counting;
+                end if;
+                
             when counting => 
                 prompt_enable <= '0';
                 count_enable_signal <= '1';
                 LED(0) <= '0';
                 LED(1) <= '1';
                 LED(2) <= '0';
+                
+                --if BTNC = '1' then
+                --    current_state <= displaying;
+                --end if;
+                
             when displaying => 
                 prompt_enable <= '0';
                 LED(0) <= '0';
                 LED(1) <= '0';
                 LED(2) <= '1';
+                
+                --if BTNC = '1' then
+                --    current_state <= prompting;
+                --end if;
+                
         end case;
                 
     end process stateCtrl;
@@ -191,7 +207,7 @@ promptController: process(prompt_count)
                 when "0011" =>
                     AN_sig_prompt <= "11111111";
                     prompt_clr_signal <= '1';
-                    current_state <= counting;
+                    prompt_done <= '1';
                     DP_sig_prompt <= '1';
                     
                 when others =>

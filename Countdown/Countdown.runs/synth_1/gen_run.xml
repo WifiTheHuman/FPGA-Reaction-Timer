@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1589611380">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1589614957">
   <File Type="PA-TCL" Name="Top_Level.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Top_Level_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Top_Level_reports.tcl"/>
@@ -44,6 +44,14 @@
     <File Path="$PSRCDIR/sources_1/new/Top_Level.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/test_block_1/test_block_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
