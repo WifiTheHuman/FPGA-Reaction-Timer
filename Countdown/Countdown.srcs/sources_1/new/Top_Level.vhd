@@ -58,7 +58,6 @@ signal current_state : state_t := prompting;
 signal AN_sig_prompt, AN_sig_count : std_logic_vector(0 to 7):= "11111111";
 signal DP_sig_prompt, DP_sig_count : std_logic := '1';
 
-signal debounce_sig : std_logic;
 signal BTNC_debounced : std_logic := '0';
 
 --prompt stuff
@@ -124,14 +123,12 @@ bit_counter3: counter port map(Clock => q3,
                               Q => o4,
                               tmpD => q4);
 
-BTNC_debouncer: DeBounce port map(Clock => debounce_sig,
+BTNC_debouncer: DeBounce port map(Clock => CLK100MHZ,
                                       Reset => '0',
                                       button_in => BTNC,
                                       pulse_out => BTNC_debounced);
 
-Debounce_div: clock_divider_1hz port map(in_clock => CLK100MHZ,
-                            enable => '1',
-                            out_clock => debounce_sig);
+
 
 stateCtrl: process(CLK100MHZ)
     begin

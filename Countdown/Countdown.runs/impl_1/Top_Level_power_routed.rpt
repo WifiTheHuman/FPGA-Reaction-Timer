@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sun May 17 02:38:59 2020
+| Date             : Sun May 17 04:24:50 2020
 | Host             : ESL16 running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Level_power_routed.rpt -pb Top_Level_power_summary_routed.pb -rpx Top_Level_power_routed.rpx
 | Design           : Top_Level
@@ -30,15 +30,15 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.122        |
+| Total On-Chip Power (W)  | 0.123        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.025        |
+| Dynamic (W)              | 0.026        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 99.4         |
 | Junction Temperature (C) | 25.6         |
-| Confidence Level         | Low          |
+| Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
 | Design Nets Matched      | NA           |
@@ -52,17 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      369 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      112 |     63400 |            0.18 |
-|   CARRY4       |    <0.001 |       30 |     15850 |            0.19 |
-|   Register     |    <0.001 |      160 |    126800 |            0.13 |
-|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       24 |       --- |             --- |
-| Signals        |    <0.001 |      305 |       --- |             --- |
-| I/O            |     0.022 |       34 |       210 |           16.19 |
+| Clocks         |     0.002 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      331 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       99 |     63400 |            0.16 |
+|   CARRY4       |    <0.001 |       26 |     15850 |            0.16 |
+|   Register     |    <0.001 |      142 |    126800 |            0.11 |
+|   Others       |     0.000 |       22 |       --- |             --- |
+| Signals        |    <0.001 |      272 |       --- |             --- |
+| I/O            |     0.023 |       34 |       210 |           16.19 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.122 |          |           |                 |
+| Total          |     0.123 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -95,12 +94,12 @@ Table of Contents
 | User Input Data             | Confidence | Details                                               | Action                                                                                                             |
 +-----------------------------+------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                      |                                                                                                                    |
-| Clock nodes activity        | Low        | User specified less than 75% of clocks                | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                          |                                                                                                                    |
 |                             |            |                                                       |                                                                                                                    |
-| Overall confidence level    | Low        |                                                       |                                                                                                                    |
+| Overall confidence level    | Medium     |                                                       |                                                                                                                    |
 +-----------------------------+------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 
 
@@ -141,7 +140,7 @@ Table of Contents
 +-----------+-----------+
 | Name      | Power (W) |
 +-----------+-----------+
-| Top_Level |     0.025 |
+| Top_Level |     0.026 |
 +-----------+-----------+
 
 
