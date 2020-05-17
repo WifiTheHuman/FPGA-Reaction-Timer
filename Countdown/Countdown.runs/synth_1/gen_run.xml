@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1589698629">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1589712872">
   <File Type="PA-TCL" Name="Top_Level.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Top_Level_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Top_Level_reports.tcl"/>
   <File Type="RDS-RDS" Name="Top_Level.vds"/>
   <File Type="RDS-UTIL" Name="Top_Level_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Top_Level_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Top_Level.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Top_Level_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Top_Level_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/BCD_to_7SEG.vhd">
