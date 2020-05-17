@@ -60,6 +60,7 @@ end component;
 
 type state_t is (prompting, counting, displaying);
 signal current_state : state_t := prompting;
+signal next_state : state_t := counting;
 
 signal AN_sig_prompt, AN_sig_count : std_logic_vector(0 to 7):= "11111111";
 signal DP_sig_prompt, DP_sig_count : std_logic := '1';
@@ -83,6 +84,9 @@ signal o1, o2, o3, o4 : std_logic_vector(3 downto 0);
 signal count_enable_signal : std_logic := '1';
 signal count_clr_signal, lastButtonState : std_logic := '0';
 signal wire_2 : std_logic_vector(3 downto 0) := "1111";
+
+
+signal lastState : std_logic := '0';
 
 begin
 
@@ -146,42 +150,68 @@ stateCtrl: process(CLK100MHZ)
             when prompting => 
                 prompt_enable <= '1';
                 count_enable_signal <= '0';
+                
                 LED(0) <= '1';
                 LED(1) <= '0';
                 LED(2) <= '0';
                 
                 if prompt_done = '1' then
-                    current_state <= counting;
+                    current_state <= next_state;
                 end if;
                 
             when counting => 
                 prompt_enable <= '0';
                 count_enable_signal <= '1';
+                
                 LED(0) <= '0';
                 LED(1) <= '1';
                 LED(2) <= '0';
                 
                 if BTNC_debounced = '1' then
-                    current_state <= displaying;
+                    count_enable_signal <= '0';
+                    current_state <= next_state;
+                   
                 end if;
-                
             when displaying => 
                 prompt_enable <= '0';
+                
                 LED(0) <= '0';
                 LED(1) <= '0';
                 LED(2) <= '1';
                 
-                --if BTNC_debounced = '1' then
-                --    current_state <= prompting;
-                --end if;
+                if BTNC_debounced = '1' and lastButtonState = '0' then
+                    current_state <= next_state;
+                end if;
                 
         end case;
-                
+        lastButtonState <= BTNC_debounced;     
     end process stateCtrl;
+    
+LED(15) <= lastButtonState;
+LED(14) <= BTNC_debounced;
+
+state_switching: process(CLK100MHZ)
+begin
+    if current_state = prompting then
+        next_state <= counting;
+    elsif current_state = counting then
+        next_state <= displaying;
+    elsif current_state = displaying then 
+        LED(8) <= '1';
+        next_state <= prompting;
+    end if;
+
+
+
+
+
+
+
+end process;
 
 count_controller: process(selector)
          begin
-            if current_state = counting then
+            if current_state = displaying then
             
                 case selector is					 
                     when "00"	=>

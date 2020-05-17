@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun May 17 06:04:15 2020
-| Host         : ESL16 running 64-bit major release  (build 9200)
+| Date         : Sun May 17 19:00:44 2020
+| Host         : DESKTOP-OCF3NJL running 64-bit major release  (build 9200)
 | Command      : report_drc -file Top_Level_drc_routed.rpt -pb Top_Level_drc_routed.pb -rpx Top_Level_drc_routed.rpx
 | Design       : Top_Level
 | Device       : xc7a100tcsg324-3
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 4
+             Violations found: 6
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 3          |
+| PDRC-153 | Warning  | Gated clock check                                   | 5          |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -59,7 +59,17 @@ Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net wire_2_reg[3]_i_2_n_0 is a gated clock net sourced by a combinational pin wire_2_reg[3]_i_2/O, cell wire_2_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net next_state_reg[0]/G0 is a gated clock net sourced by a combinational pin next_state_reg[0]/L3_2/O, cell next_state_reg[0]/L3_2 (in next_state_reg[0] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net next_state_reg[1]/G0 is a gated clock net sourced by a combinational pin next_state_reg[1]/L3_2/O, cell next_state_reg[1]/L3_2 (in next_state_reg[1] macro). This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net wire_2__0 is a gated clock net sourced by a combinational pin wire_2_reg[3]_i_2/O, cell wire_2_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

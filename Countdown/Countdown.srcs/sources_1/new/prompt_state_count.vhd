@@ -40,7 +40,7 @@ end prompt_state_count;
 architecture Behavioral of prompt_state_count is
 
 SIGNAL COUNT : INTEGER := 0;
-constant COUNT_MAX : integer := 300000000;
+constant COUNT_MAX : integer := 200000000;
 
 begin
     
