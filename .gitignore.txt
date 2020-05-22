@@ -1,0 +1,5 @@
+# Exclue all of the following Vivado folers
+Countdown.cache/
+Countdown.hw/
+Countdown.ip*/
+Countdown.sim/
