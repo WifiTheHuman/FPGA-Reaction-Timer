@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sun May 17 22:57:00 2020
-| Host             : ESL16 running 64-bit major release  (build 9200)
+| Date             : Mon May 18 09:30:40 2020
+| Host             : DESKTOP-OCF3NJL running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Level_power_routed.rpt -pb Top_Level_power_summary_routed.pb -rpx Top_Level_power_routed.rpx
 | Design           : Top_Level
 | Device           : xc7a100tcsg324-3
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.107        |
+| Total On-Chip Power (W)  | 0.106        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.009        |
@@ -61,7 +61,7 @@ Table of Contents
 | Signals        |    <0.001 |      423 |       --- |             --- |
 | I/O            |     0.006 |       35 |       210 |           16.67 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.107 |          |           |                 |
+| Total          |     0.106 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.019 |       0.004 |      0.015 |
+| Vccint    |       1.000 |     0.018 |       0.003 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |

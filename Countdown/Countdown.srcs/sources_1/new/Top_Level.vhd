@@ -66,7 +66,6 @@ signal AN_sig_prompt, AN_sig_count : std_logic_vector(0 to 7):= "11111111";
 signal DP_sig_prompt, DP_sig_count : std_logic := '1';
 
 signal BTNC_debounced : std_logic := '0';
-signal BTND_debounced : std_logic := '0';
 
 --prompt stuff
 signal prompt_enable : std_logic;
@@ -142,10 +141,6 @@ BTNC_debouncer: DeBounce port map(Clock => CLK100MHZ,
                                       button_in => BTNC,
                                       pulse_out => BTNC_debounced);
                                       
-BTND_debouncer: DeBounce port map(Clock => CLK100MHZ,
-                                      Reset => '0',
-                                      button_in => BTND,
-                                      pulse_out => BTND_debounced);
 
 prompt_state_counter: prompt_state_count port map(Clock => CLK100MHZ,
                                             Reset => promptClkreset,
@@ -158,14 +153,8 @@ stateCtrl: process(CLK100MHZ)
                 prompt_enable <= '1';
                 prompt_clr_signal <= '0';
                 promptClkReset <= '0';
-                
                 count_clr_signal <= '1';
                 count_enable_signal <= '0';
-                
-                LED(0) <= '1';
-                LED(1) <= '0';
-                LED(2) <= '0';
-                
                 if prompt_done = '1' then
                     current_state <= next_state;
                 end if;
@@ -175,12 +164,6 @@ stateCtrl: process(CLK100MHZ)
                 count_enable_signal <= '1';
                 promptClkReset <= '0';
                 count_clr_signal <= '0';
-                
-                LED(0) <= '0';
-                LED(1) <= '1';
-                LED(2) <= '0';
-                
-                
                 if BTNC_debounced = '1' then
                     current_state <= next_state;
                 end if;
@@ -188,15 +171,9 @@ stateCtrl: process(CLK100MHZ)
                 prompt_enable <= '0';
                 prompt_clr_signal <= '1';
                 promptClkReset <= '1';
-                
                 count_enable_signal <= '0';
                 count_clr_signal <= '0';
-                
-                LED(0) <= '0';
-                LED(1) <= '0';
-                LED(2) <= '1';
-                
-                if BTND_debounced = '1' then
+                if BTNC_debounced = '1' then
                     current_state <= next_state;
                     
                 end if;
@@ -205,8 +182,6 @@ stateCtrl: process(CLK100MHZ)
         lastButtonState <= BTNC_debounced;     
     end process stateCtrl;
     
-LED(15) <= lastButtonState;
-LED(14) <= BTNC_debounced;
 
 state_switching: process(CLK100MHZ)
 begin

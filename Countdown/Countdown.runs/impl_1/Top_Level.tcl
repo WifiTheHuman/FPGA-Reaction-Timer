@@ -70,12 +70,12 @@ set rc [catch {
   create_project -in_memory -part xc7a100tcsg324-3
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/yma82/temp/rxnmongroup15/Countdown/Countdown.cache/wt [current_project]
-  set_property parent.project_path C:/Users/yma82/temp/rxnmongroup15/Countdown/Countdown.xpr [current_project]
+  set_property webtalk.parent_dir C:/Users/Lachie/Documents/373/rxnmongroup15/Countdown/Countdown.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Lachie/Documents/373/rxnmongroup15/Countdown/Countdown.xpr [current_project]
   set_property ip_output_repo C:/Users/yma82/VHDL373project/Thiswillwork/rxnmongroup15/Countdown/Countdown.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/yma82/temp/rxnmongroup15/Countdown/Countdown.runs/synth_1/Top_Level.dcp
-  read_xdc {{C:/Users/yma82/temp/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc}}
+  add_files -quiet C:/Users/Lachie/Documents/373/rxnmongroup15/Countdown/Countdown.runs/synth_1/Top_Level.dcp
+  read_xdc {{C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc}}
   link_design -top Top_Level -part xc7a100tcsg324-3
   close_msg_db -file init_design.pb
 } RESULT]

@@ -24,21 +24,21 @@ create_project -in_memory -part xc7a100tcsg324-3
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/yma82/temp/rxnmongroup15/Countdown/Countdown.cache/wt [current_project]
-set_property parent.project_path C:/Users/yma82/temp/rxnmongroup15/Countdown/Countdown.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Lachie/Documents/373/rxnmongroup15/Countdown/Countdown.cache/wt [current_project]
+set_property parent.project_path C:/Users/Lachie/Documents/373/rxnmongroup15/Countdown/Countdown.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/yma82/VHDL373project/Thiswillwork/rxnmongroup15/Countdown/Countdown.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  {C:/Users/yma82/temp/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/BCD_to_7SEG.vhd}
-  {C:/Users/yma82/temp/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd}
-  C:/Users/yma82/temp/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Button_debouncer.vhd
-  C:/Users/yma82/temp/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/display_div.vhd
-  {C:/Users/yma82/temp/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd}
-  {C:/Users/yma82/temp/rxnmongroup15/VHDL Code/prompt_clock_divider_1hz.vhd}
-  C:/Users/yma82/temp/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/prompt_state_count.vhd
-  C:/Users/yma82/temp/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd
+  {C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/BCD_to_7SEG.vhd}
+  {C:/Users/Lachie/Documents/373/rxnmongroup15/VHDL Code/Blairs_clock_divider.vhd}
+  C:/Users/Lachie/Documents/373/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Button_debouncer.vhd
+  C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/new/display_div.vhd
+  {C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/sources_1/imports/VHDL Code/four_bit_counter_with_clear.vhd}
+  {C:/Users/Lachie/Documents/373/rxnmongroup15/VHDL Code/prompt_clock_divider_1hz.vhd}
+  C:/Users/Lachie/Documents/373/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/prompt_state_count.vhd
+  C:/Users/Lachie/Documents/373/rxnmongroup15/Countdown/Countdown.srcs/sources_1/new/Top_Level.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -48,8 +48,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/yma82/temp/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/yma82/temp/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc}}]
+read_xdc {{C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Lachie/Documents/373/rxnmongroup15/ReactionTimerProject/ReactionTimerProject.srcs/constrs_1/imports/VHDL Code/Nexys4DDR_Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
