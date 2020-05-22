@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Countdown.srcs/sources_1/new/Button_debouncer.vhd" \
-
-# Do not sort compile order
-nosort
